@@ -8,7 +8,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const client = new ApolloClient({
-  uri: process.env.REACT_APP_URI || 'http://localhost:4000',
+  uri: 'https://gql-test-1.herokuapp.com' || 'http://localhost:4000',
   cache: new InMemoryCache(),
 });
 
