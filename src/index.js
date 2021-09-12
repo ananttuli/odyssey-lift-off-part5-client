@@ -8,7 +8,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const client = new ApolloClient({
-  uri: process.env.URI || 'http://localhost:4000',
+  uri: process.env.REACT_APP_URI || 'http://localhost:4000',
   cache: new InMemoryCache(),
 });
 
